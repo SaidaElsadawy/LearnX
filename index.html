@@ -1,0 +1,422 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+
+    <!-- يجعل الموقع مناسبًا للموبايل والتابلت -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>LearnX | Landing Page</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- ملف CSS الخاص بنا -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- ================= NAVBAR ================= -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand" href="#home"> Learn<span>X</span> </a>
+
+        <!-- زر الموبايل -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarMenu"
+        >
+          <i class="bi bi-list"></i>
+        </button>
+
+        <!-- روابط الـ Navbar -->
+        <div class="collapse navbar-collapse" id="navbarMenu">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">الرئيسية</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#about">عن المنصة</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#courses">الكورسات</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#features">المميزات</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">تواصل معنا</a>
+            </li>
+          </ul>
+
+          <!-- زر تغيير الوضع -->
+          <button id="themeBtn" class="theme-btn" title="تغيير الوضع">
+            <i class="bi bi-moon-fill"></i>
+          </button>
+
+          <!-- زر WhatsApp -->
+          <a
+            href="https://wa.me/201032157496"
+            target="_blank"
+            class="btn main-btn navbar-btn"
+          >
+            ابدأ الآن
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ================= HERO ================= -->
+    <section id="home" class="hero">
+      <!-- أشكال ديكورية بدون صور -->
+      <div class="shape shape-one"></div>
+      <div class="shape shape-two"></div>
+
+      <div class="container">
+        <div class="row align-items-center min-vh-100">
+          <!-- النص -->
+          <div class="col-lg-6 hero-content">
+            <p class="small-title">
+              <i class="bi bi-stars"></i>
+              تعلّم بطريقة مختلفة
+            </p>
+
+            <h1>
+              طوّر مهاراتك
+              <span>وابنِ مستقبلك</span>
+            </h1>
+
+            <p class="hero-text">
+              منصة تعليمية عصرية تساعدك على اكتساب مهارات عملية بطريقة بسيطة
+              ومنظمة.
+            </p>
+
+            <!-- الأزرار -->
+            <div class="hero-buttons">
+              <a href="#courses" class="btn main-btn">
+                استكشف الكورسات
+                <i class="bi bi-arrow-left"></i>
+              </a>
+
+              <a
+                href="https://wa.me/201032157496"
+                target="_blank"
+                class="btn whatsapp-btn"
+              >
+                <i class="bi bi-whatsapp"></i>
+                تواصل معنا
+              </a>
+            </div>
+
+            <!-- أرقام بسيطة -->
+            <div class="stats">
+              <div>
+                <strong>20+</strong>
+                <span>كورس</span>
+              </div>
+
+              <div>
+                <strong>5K+</strong>
+                <span>طالب</span>
+              </div>
+
+              <div>
+                <strong>95%</strong>
+                <span>رضا الطلاب</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- التصميم البصري بدل صورة المدرس -->
+          <div class="col-lg-6">
+            <div class="hero-visual">
+              <!-- دائرة خلفية -->
+              <div class="circle"></div>
+
+              <!-- بطاقة رئيسية -->
+              <div class="learning-card">
+                <div class="card-top">
+                  <div class="mini-logo">LX</div>
+
+                  <div>
+                    <small>Learning Platform</small>
+                    <h4>ابدأ رحلة التعلم</h4>
+                  </div>
+                </div>
+
+                <!-- Progress -->
+                <div class="progress-area">
+                  <div class="d-flex justify-content-between">
+                    <span>تقدمك هذا الأسبوع</span>
+                    <strong>75%</strong>
+                  </div>
+
+                  <div class="progress">
+                    <div class="progress-bar" style="width: 75%"></div>
+                  </div>
+                </div>
+
+                <!-- Cards صغيرة -->
+                <div class="mini-cards">
+                  <div class="mini-card">
+                    <i class="bi bi-code-slash"></i>
+                    <span>Programming</span>
+                  </div>
+
+                  <div class="mini-card">
+                    <i class="bi bi-palette"></i>
+                    <span>Design</span>
+                  </div>
+
+                  <div class="mini-card">
+                    <i class="bi bi-bar-chart"></i>
+                    <span>Business</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- عناصر عائمة -->
+              <div class="floating-box box-one">
+                <i class="bi bi-check-circle-fill"></i>
+                تعلم بطريقة عملية
+              </div>
+
+              <div class="floating-box box-two">
+                <i class="bi bi-lightning-fill"></i>
+                ابدأ الآن
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-title reveal">
+          <p>عن المنصة</p>
+          <h2>التعلم أصبح <span>أبسط</span></h2>
+          <div></div>
+        </div>
+
+        <div class="row g-4 align-items-center">
+          <div class="col-lg-6 reveal">
+            <h3>كل ما تحتاجه لتطوير نفسك في مكان واحد.</h3>
+
+            <p class="section-text">
+              نقدم تجربة تعليمية بسيطة تجمع بين المحتوى الواضح، التطبيق العملي،
+              وخطوات التعلم المنظمة.
+            </p>
+
+            <ul class="check-list">
+              <li><i class="bi bi-check-circle-fill"></i> محتوى سهل ومنظم</li>
+              <li>
+                <i class="bi bi-check-circle-fill"></i> تطبيق عملي ومشاريع
+              </li>
+              <li><i class="bi bi-check-circle-fill"></i> مناسب للمبتدئين</li>
+              <li><i class="bi bi-check-circle-fill"></i> تعلم في أي وقت</li>
+            </ul>
+          </div>
+
+          <div class="col-lg-6 reveal">
+            <div class="about-card">
+              <div class="about-icon">
+                <i class="bi bi-rocket-takeoff"></i>
+              </div>
+
+              <h3>تعلم. طبّق. تطور.</h3>
+
+              <p>
+                هدفنا أن تنتقل من المعرفة النظرية إلى المهارة العملية خطوة
+                بخطوة.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= COURSES ================= -->
+    <section id="courses" class="section courses-section">
+      <div class="container">
+        <div class="section-title reveal">
+          <p>مجالات التعلم</p>
+          <h2>اختار مهارتك وابدأ <span>الآن</span></h2>
+          <div></div>
+        </div>
+
+        <div class="row g-4">
+          <!-- Course 1 -->
+          <div class="col-md-6 col-lg-4 reveal">
+            <div class="course-card">
+              <div class="course-icon purple">
+                <i class="bi bi-code-slash"></i>
+              </div>
+
+              <span>01</span>
+              <h3>Web Development</h3>
+              <p>تعلم بناء مواقع ويب حديثة وتفاعلية.</p>
+
+              <a href="https://wa.me/201032157496">
+                اعرف المزيد <i class="bi bi-arrow-left"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Course 2 -->
+          <div class="col-md-6 col-lg-4 reveal">
+            <div class="course-card">
+              <div class="course-icon blue">
+                <i class="bi bi-phone"></i>
+              </div>
+
+              <span>02</span>
+              <h3>App Development</h3>
+              <p>تعلم أساسيات بناء تطبيقات الموبايل.</p>
+
+              <a href="https://wa.me/201032157496">
+                اعرف المزيد <i class="bi bi-arrow-left"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Course 3 -->
+          <div class="col-md-6 col-lg-4 reveal">
+            <div class="course-card">
+              <div class="course-icon green">
+                <i class="bi bi-graph-up-arrow"></i>
+              </div>
+
+              <span>03</span>
+              <h3>Digital Skills</h3>
+              <p>طور مهاراتك الرقمية والعملية.</p>
+
+              <a href="https://wa.me/201032157496">
+                اعرف المزيد <i class="bi bi-arrow-left"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FEATURES ================= -->
+    <section id="features" class="section">
+      <div class="container">
+        <div class="section-title reveal">
+          <p>لماذا نحن؟</p>
+          <h2>تجربة تعلم <span>مختلفة</span></h2>
+          <div></div>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3 reveal">
+            <div class="feature-card">
+              <i class="bi bi-lightning-charge"></i>
+              <h3>تعلم سريع</h3>
+              <p>محتوى مختصر وواضح بدون تعقيد.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 reveal">
+            <div class="feature-card">
+              <i class="bi bi-laptop"></i>
+              <h3>تطبيق عملي</h3>
+              <p>تعلم من خلال أمثلة ومشاريع.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 reveal">
+            <div class="feature-card">
+              <i class="bi bi-clock"></i>
+              <h3>مرونة</h3>
+              <p>تعلم في الوقت والمكان المناسب لك.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 reveal">
+            <div class="feature-card">
+              <i class="bi bi-headset"></i>
+              <h3>دعم</h3>
+              <p>تواصل معنا عند الحاجة للمساعدة.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CTA ================= -->
+    <section id="contact" class="cta-section">
+      <div class="container">
+        <div class="cta-box reveal">
+          <div>
+            <p>مستعد تبدأ؟</p>
+            <h2>خطوتك الأولى تبدأ <span>اليوم</span></h2>
+          </div>
+
+          <a
+            href="https://wa.me/201032157496"
+            target="_blank"
+            class="btn whatsapp-btn"
+          >
+            <i class="bi bi-whatsapp"></i>
+            تواصل عبر WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <a class="navbar-brand" href="#home"> Learn<span>X</span> </a>
+
+          <p>تعلم اليوم، وابنِ مستقبلك.</p>
+
+          <div class="social">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <hr />
+
+        <p class="copyright">© 2026 LearnX. جميع الحقوق محفوظة.</p>
+      </div>
+    </footer>
+
+    <!-- زر WhatsApp ثابت -->
+    <a
+      href="https://wa.me/201032157496"
+      target="_blank"
+      class="floating-whatsapp"
+    >
+      <i class="bi bi-whatsapp"></i>
+    </a>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- ملف JavaScript الخاص بنا -->
+    <script src="script.js"></script>
+  </body>
+</html>
